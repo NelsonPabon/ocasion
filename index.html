@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La ocasión</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <!-- Conexión al archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header con imagen -->
+  <header class="header">
+    <img src="images/head.png" alt="Encabezado" class="header-img">
+  </header>
+
+  <div class="container">
+    
+    <!-- Contenedor de la imagen -->
+    <div class="image-container">
+      <img id="random-image" src="imagenes/imagen1.jpg" alt="Imagen Aleatoria">
+    </div>
+
+    <!-- Hora -->
+    <div id="time" class="time-container">Cargando...</div> 
+    
+    <!-- Vence -->
+    <p id="fecha"></p>
+
+    <!-- Botón para cambiar la imagen -->
+    <button id="change-image-btn" onclick="document.getElementById('miAudio').play()">DESCUBRE TU DESCUENTO</button>
+    
+    <audio id="miAudio">
+      <source src="audio/redobles.mp3" type="audio/mpeg">
+      Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+  </div>
+
+  <!-- Botón para imprimir -->
+  <button id="printBtn" id="change-image-btn" onclick="document.getElementById('Audiofondo').play()">Imprimir Página</button>
+
+  <audio id="Audiofondo" loop>
+    <source src="audio/fondo.mp3" type="audio/mpeg">
+    Tu navegador no soporta la etiqueta de audio.
+  </audio>
+
+  <!-- Conexión al archivo JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
